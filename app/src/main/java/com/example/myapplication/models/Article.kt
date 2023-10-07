@@ -10,10 +10,17 @@ data class Article(
     val content: String,
     val description: String,
     val publishedAt: String,
-    val source: Source,
+    val source: Source?,
     val title: String,
     val url: String,
     val urlToImage: String
 ):Serializable{
     @PrimaryKey(autoGenerate = true) var id:Int=0
+    override fun hashCode(): Int {
+        var result = id.hashCode()
+        if(url.isNullOrEmpty()){
+            result = 31 * result + url.hashCode()
+        }
+        return result
+    }
 }

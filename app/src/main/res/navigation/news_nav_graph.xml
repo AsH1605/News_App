@@ -44,7 +44,6 @@
         android:id="@+id/articleFragment"
         android:name="com.example.myapplication.ui.fragments.ArticleFragment"
         android:label="ArticleFragment" >
-
         <argument
             android:name="article"
             app:argType="com.example.myapplication.models.Article" />
