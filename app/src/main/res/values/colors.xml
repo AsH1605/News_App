@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bg_col">#FFFFFFFF</color>
+    <color name="textcolor">#FF000000</color>
 </resources>

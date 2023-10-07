@@ -4,7 +4,6 @@ import androidx.room.TypeConverter
 import com.example.myapplication.models.Source
 
 class Converters {
-
     @TypeConverter
     fun fromSource(source: Source): String{
         return source.name
